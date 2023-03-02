@@ -26,4 +26,5 @@ jobs:
             -- npm run mocha-junit # Note space after --
         env:
           TESTMO_URL: ${{ secrets.TESTMO_URL }}
-          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
+          TESTMO_TOKEN: "testmo_api_eyJpdiI6Im9xVlgxK3djb05OMFRtUFhwblFpTXc9PSIsInZhbHVlIjoiZzFNTFdaQklwWDV3U0REQjdQSWh3dTRVb0NOZ211WEN2MG9oTUordFFDTT0iLCJtYWMiOiIxZjMzNTE3NjJhYzkwYjIxOTFiMzRmNTkzMmQ2ZjQxZjU1YWNlYWU2ZTNmNmEzM2EwYjk3ZTE4ZTQ2MTA5NzAzIiwidGFnIjoiIn0="
+          
