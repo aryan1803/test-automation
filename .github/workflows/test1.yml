@@ -18,7 +18,7 @@ jobs:
       - run: npm install --no-save @testmo/testmo-cli
       - run: |
           npx testmo automation:run:submit \
-            --instance "$TESTMO_URL" \
+            --instance "https://testproject18.testmo.net/projects/view/1" \
             --project-id 1 \
             --name "Mocha test run" \
             --source "unit-tests" \
