@@ -25,5 +25,5 @@ describe('files', function () {
         });
     });
 
-	// [..]
+	
 });
