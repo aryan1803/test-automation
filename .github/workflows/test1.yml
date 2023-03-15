@@ -18,12 +18,86 @@ jobs:
       - run: npm install --no-save @testmo/testmo-cli
       - run: |
           npx testmo automation:run:submit \
-            --instance "$TESTMO_URL" \
+            --instance "# .github/workflows/test.yml
+name: Test
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19
+          cache: npm
+      - run: npm ci
+      - run: npm install --no-save @testmo/testmo-cli
+      - run: |
+          npx testmo automation:run:submit \
+            --instance "https://testproject18.testmo.net/projects/view/1" \
             --project-id 1 \
             --name "Mocha test run" \
             --source "unit-tests" \
             --results results/*.xml \
             -- npm run mocha-junit # Note space after --
         env:
-          TESTMO_URL: ${{ secrets.TESTMO_URL }}
-          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
+          TESTMO_URL: "# .github/workflows/test.yml
+name: Test
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19
+          cache: npm
+      - run: npm ci
+      - run: npm install --no-save @testmo/testmo-cli
+      - run: |
+          npx testmo automation:run:submit \
+            --instance "https://testproject18.testmo.net/projects/view/1" \
+            --project-id 1 \
+            --name "Mocha test run" \
+            --source "unit-tests" \
+            --results results/*.xml \
+            -- npm run mocha-junit # Note space after --
+        env:
+          TESTMO_URL: "# .github/workflows/test.yml
+name: Test
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19
+          cache: npm
+      - run: npm ci
+      - run: npm install --no-save @testmo/testmo-cli
+      - run: |
+          npx testmo automation:run:submit \
+            --instance "https://testproject18.testmo.net/projects/view/1" \
+            --project-id 1 \
+            --name "Mocha test run" \
+            --source "unit-tests" \
+            --results results/*.xml \
+            -- npm run mocha-junit # Note space after --
+        env:
+          TESTMO_URL: "https://testproject18.testmo.net/projects/view/1"
+          TESTMO_TOKEN: "testmo_api_eyJpdiI6Im5CeXRXeXFONHBKSUdzUzZPTGxjL3c9PSIsInZhbHVlIjoiZ011YlFqVEpYcUMxeU9xSmw5QW1ONTE2Y0ZqTlVxUlFTVkc3S0xwUmsvcz0iLCJtYWMiOiIxOTEyNTVhYTViZmM1MDc2NzI0ZTUwZDIxOWU4NDk3Y2YyMzAwOGU3ZjYzNmM1NTVkY2UxMjhiZDUyNDRiY2E2IiwidGFnIjoiIn0="
