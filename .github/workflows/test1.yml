@@ -19,12 +19,12 @@ jobs:
       - run: npm install --no-save @testmo/testmo-cli
       - run: |
           npx testmo automation:run:submit \
-            --instance "https://testproject18.testmo.net/projects/view/1" \
+            --instance "https://testautomation69.testmo.net/projects/view/1" \
             --project-id 1 \
             --name "Mocha test run" \
             --source "unit-tests" \
             --results results/*.xml \
             -- npm run mocha-junit # Note space after --
         env:
-          TESTMO_URL: "https://testproject18.testmo.net/projects/view/1"
-          TESTMO_TOKEN: "testmo_api_eyJpdiI6IjEza0ZxMEJnK29VTVdiWlJyaEFlYWc9PSIsInZhbHVlIjoickE2a2tOYldHclJVZHF0bzRyVXFkY1JRSU4yUnpmYlBVbTBheG5DckJVUT0iLCJtYWMiOiI0ZmJhNzgyYTc1ODI3ZGRiMGQ4YTIwZmIyN2M2MjFlNmM5OTRhYTNkZDZkYzVhMDJjNmMxNzdkYzA1NmY3MDAyIiwidGFnIjoiIn0="
+          TESTMO_URL: "https://testautomation69.testmo.net/projects/view/1"
+          TESTMO_TOKEN: "testmo_api_eyJpdiI6IjJ1OUg5OEQreVFMSktuNzFqb3JzWGc9PSIsInZhbHVlIjoiNXdkb3hCQlhwdDg4V0EreW9DN1VxdzJrc3dxN0F6TDJvQS91TCtqS2ZLND0iLCJtYWMiOiIyNzk0MmVhNjM5MGM2ZWY0OTcwNDBmMTk0ODUxMmQ5NTFkNTY1NWU1OGE3Y2RmZTVlNmZkMTZmODk1NDBlOWJmIiwidGFnIjoiIn0="
